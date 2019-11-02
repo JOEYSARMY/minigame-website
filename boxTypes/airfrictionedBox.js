@@ -15,13 +15,10 @@ function airBox(x, y, w, h) {
     rect(0, 0, this.w, this.h);
     pop();
   }
-
-  this.clicky = function() {
-    console.log("clicky was runned")
-    let d = dist(mouseX, mouseY, Box.position.x, Box.position.y);
-    if(d < Box.x) {
-      console.log("clicked yo");
-    }
+  this.offScreen = function() {
+    var x = this.body.position.x;
+    var y = this.body.position.y;
+    return (y > windowHeight);
   }
 
 }
