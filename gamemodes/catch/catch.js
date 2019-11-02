@@ -2,7 +2,7 @@ var engine;
 var world;
 var boxes = [];
 var circles = [];
-var triangles = [];
+var trapezoids = [];
 var score = 0;
 var lives = 5;
 
@@ -13,7 +13,6 @@ function setup() {
   Matter.Engine.run(engine);
   setInterval(fallingboxes,500);
   setInterval(fallingcircles, 10000);
-  setInterval(fallingtriangles,500);
   setInterval(gameOver, 1);
 
 
@@ -33,14 +32,9 @@ function fallingcircles() {
   circles.push(new airCircle(Math.random() * windowWidth, -100, 40));
 }
 
-function fallingtriangles() {
-    triangles.push(new airtriangle(Math.random() * windowWidth, -100, 40));
-}
-
 function mousePressed() {
   deletus(boxes);
   deletus(circles);
-  deletus(triangles);
 }
 
 function deletus (arr) {
@@ -81,15 +75,4 @@ function draw() {
         document.getElementById("Lives").innerHTML = lives;
         }
       }
-
-      for (var i = 0; i < triangles.length; i++) {
-        triangles[i].show();
-        if(triangles[i].offScreen()) {
-          Matter.World.remove(world, triangles[i].body);
-          triangles.splice(i,1);
-          i--;
-          lives--;
-          document.getElementById("Lives").innerHTML = lives;
-          }
-        }
 }
