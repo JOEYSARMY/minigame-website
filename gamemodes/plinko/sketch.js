@@ -52,7 +52,6 @@ function draw() {
   for (var i = 0; i < particles.length; i++) {
     particles[i].show();
     if (particles[i].isOffScreen()) {
-      console.log("I ran!");
       Matter.World.remove(world, particles[i].body);
       particles.splice(i, 1);
       i--;
