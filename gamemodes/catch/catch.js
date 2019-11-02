@@ -2,21 +2,27 @@ var engine;
 var world;
 var boxes = [];
 var score = 0;
+var lives = 5;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight,);
   engine = Matter.Engine.create();
   world = engine.world;
   Matter.Engine.run(engine);
   setInterval(falling,500);
+  setInterval(gameOver, 1);
 
 
 }
 
-
+function gameOver(){
+  if(lives <= 0) {
+    window.location.href = "gameOver.html";
+  }
+}
 
 function falling() {
-    boxes.push(new airBox(Math.random()*400, -100, 50, 50));
+    boxes.push(new airBox(Math.random()*windowWidth, -100, 50, 50));
 }
 
 function mousePressed() {
@@ -31,7 +37,7 @@ function mousePressed() {
       boxes.splice(i,1);
       i--;
       score++;
-      console.log(score);
+      document.getElementById("score").innerHTML = score;
     }
   }
 }
@@ -39,8 +45,14 @@ function mousePressed() {
 function draw() {
   background(50);
   for (var i = 0; i < boxes.length; i++) {
-    Matter.World.add(world, boxes[i]);
     boxes[i].show();
+    if(boxes[i].offScreen()) {
+      Matter.World.remove(world, boxes[i].body);
+      boxes.splice(i,1);
+      i--;
+      lives--;
+      document.getElementById("Lives").innerHTML = lives;
+    }
 
   }
 }
