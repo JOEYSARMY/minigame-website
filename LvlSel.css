@@ -3,7 +3,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   padding: 0;
-  background-color: #ACA287;
+  background-color: #c09f87;
 
 }
 
@@ -11,6 +11,7 @@ body {
   width:80%;
   margin:auto;
   overflow: hidden;
+  position: relative;
 
 }
 ul {
@@ -23,7 +24,7 @@ header{
   color:#ffffff;
   padding-top: 10px;
   min-height: 70px;
-  border-bottom: #EC3047 7px solid;
+  border-bottom: #add8e6 7px solid;
 
 }
 header a {
@@ -45,16 +46,22 @@ header nav {
   float: right;
 }
 header .highlight, header .current a {
-  color: #EC3047;
+  color: #add8e6;
   font-weight: bold;
 }
 .btn-group button {
-  background-color: #241423;
+  background-color: #b5651d;
+  height: 150px;
+  width: 350px;
+  position: relative;
   border: 5px solid #000000;
   color: white;
   padding: 10px 24px;
   cursor: pointer;
   float: left;
+  border-radius: 30px;
+  font-size: 40px;
+  color: #ffffff;
 
 }
 .btn-group button:not(:last-child) {
@@ -66,5 +73,5 @@ header .highlight, header .current a {
   display: table;
 }
 .btn-group button:hover {
-  background-color: #EC3047;
+  background-color: #add8e6;
 }
