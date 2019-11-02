@@ -2,9 +2,10 @@ function Plinko (x, y, r) {
   var options = {
     restitution: 0.5,
     isStatic: true,
-    friction: 0
+    friction: 0,
   }
   this.body = Matter.Bodies.circle(x, y, r, options);
+  this.body.label = "plinko";
   this.r = r;
   Matter.World.add(world, this.body);
 }
