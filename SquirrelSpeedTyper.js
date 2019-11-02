@@ -6,11 +6,11 @@ window.addEventListener('load', init);
 const levels = {
   easy: 30,
   medium: 15,
-  hard: 10
+  hard: 5
 };
 
 // To change level
-const currentLevel = levels.medium;
+const currentLevel = levels.hard;
 
 let time = currentLevel;
 let score = 0;
