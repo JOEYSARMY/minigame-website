@@ -23,7 +23,9 @@ var canvas = document.getElementById("canvas"),
 
 canvas.width = width;
 canvas.height = height;
-
+var background = new Image();
+background.src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiB76aC1crlAhVMKqwKHQKjC-0Qjhx6BAgBEAI&url=https%3A%2F%2Fwallpaperaccess.com%2Ftree&psig=AOvVaw2xUgny3G8EDV_wqtYxMtMK&ust=1572754446243299";
+background.onload = function() {ctx.drawImage(background,0.0);}
 function update(){
   // check keys
     if (keys[38] || keys[32]) {
