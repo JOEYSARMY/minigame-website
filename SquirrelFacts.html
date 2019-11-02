@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Squirrel Facts</h1>
+
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+
+  const facts = [
+    'There are about 200 species of squirrels in the world. There are about 10 tree species  in North America. The lifespan of a squirrel is about nine years.',
+    'A squirrel has 2 to 4 babies at a time and can raise two litters of “kits” per year. Baby squirrels are born blind without fur.  A baby squirrel is totally dependent on its mother until about three months old.',
+    'A squirrel’s four front teeth never stop growing. – This is a common characteristic of other rodents, as well. If their top and bottom teeth don’t line up correctly their ongoing growth can cause major health problems for a squirrel such that it may drool excessively or be incapable of closing its mouth, leading to difficulty eating and starvation.',
+    'Squirrels are hoarders and bury their nuts, one at a time, scattered around their territory. Squirrels have a difficult time keeping an eye on all their hidden food and may lose 25% of their food to thieves. In the winter they can smell their food buried under a foot of snow. To look for nuts they’ve buried in the past, squirrels use visual landmarks like particular trees, rocks and streams.',
+    'Squirrels have been observed engaging in “deceptive caching” and may pretend to bury a nut to throw off potential thieves. Sometimes squirrels dig a hole and vigorously cover it up again, but without depositing the nut to throw off potential food thieves.',
+    'Squirrels don’t always dig up all of their buried nuts, which results in trees! They have accidentally contributed countless trees to our nation’s parks and forests. If you ask us, that’s a pretty great reason alone to appreciate squirrels.',
+    'When squirrels feel threatened or want to escape predators, they run away in a zigzag pattern. This is an incredibly useful strategy to escape hawks and other predators. Unfortunately, it doesn’t work so well on cars. Consider slowing down and giving squirrels a brake!',
+    'Squirrel paws are hand-like, with little primitive thumbs and strong claws for grasping at tree bark. These features, combined with a squirrel’s ability to rotate its hind feet 180 degrees, allow the animal to descend head-first from a tree',
+    'Squirrels are acrobatic, intelligent and adaptable. Their nimble hands make it easy for squirrels to steal from birdfeeders, particularly platforms or cage-like models. To prevent a squirrel from getting to a hanging bird feeder, make the cord slick by coating it with vegetable oil.',
+    'Quick and nimble as they are, squirrels regularly get stuck if they run into tight places too fast. To check out space constraints, even in the dark, squirrels use whiskers on their faces and their legs. These highly sensitive hairs allow the animal to feel how close the sides of a hidey-hole are and decide how close is too close.',
+    'A squirrel’s diet includes a lot of nuts, berries, stems, roots and other plant matter. However, they will eat meat and other sources of protein when under stress or as the opportunity arises. This includes bird eggs, snakes, smaller rodents and chickens, among other things.',
+    'Squirrels bulk-up to stay warm during the winter. Putting on some extra weight is one strategy squirrels use to stay warm during the cold winter months.',
+    'Contrary to some popular beliefs, squirrels aren’t quiet. Squirrels talk through whistling, chirping and clicking. They warn other squirrels about danger. They can produce a range of vocalizations including barks, grunts, squeaks and their familiar chatter.',
+    'A squirrel’s nest is called a drey. It is about the size of a football and is built high in trees. It is made from sticks and inside has dry grass, moss, feathers and shredded tree bark.',
+    'Humans introduced squirrels to most of our major US city parks in the 1850s and 1860s. Feeding squirrels was seen as a means to encourage kindness to all animals. People thought that by adding squirrels to our parks in cities, we could bring pleasure and entertainment to the people who couldn’t leave the city and enjoy nature.',
+  ];
+
+    rand = Math.floor(Math.random() * facts.length);
+
+
+    document.getElementById("demo").innerHTML = String(facts[rand]);
+
+}
+</script>
+
+</body>
+</html>
