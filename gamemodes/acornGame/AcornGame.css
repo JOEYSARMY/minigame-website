@@ -1,10 +1,11 @@
-canvas{
-  border:1px solid black;
+body{
+  border:3px solid black;
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 800px;
-  align-content: center;
+  font-size: 25px;
+  background-image: url("../../images/bg.jpg");
 }
