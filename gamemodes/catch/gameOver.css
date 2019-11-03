@@ -1,0 +1,47 @@
+h1 {
+  color: #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0;
+  background-color: #212121;
+  color: #000000;
+  text-align: center;
+
+}
+header .highlight, header .current a {
+  color: #ffc107;
+  font-weight: bold;
+}
+.btn-group button {
+  background-color: #ffe082;
+
+  border: 0px solid #000000;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 10px;
+  margin-right: 10px;
+  height:110px;
+  width:100px;
+
+
+}
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+.btn-group:after {
+  content:"";
+  clear: both;
+  display: inline-block;
+}
+.btn-group button:hover {
+  background-color: #ffffba;
+}
