@@ -27,7 +27,7 @@ const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 const currentPhrase = document.querySelector('#current-phrase');
 
-const words =[["squirrel", "Acorns", "Tree", "Ratatoskr", "Aorta", "Trachea", "Tibial Artery", "Vena Cava", "Caudal Vein"]];
+const words =[["squirrel", "Acorns", "Tree", "Ratatoskr", "Aorta", "Trachea", "Tibial Artery", "Vena Cava", "Caudal Vein", "松鼠神将很快从他久已被遗忘的纯粹折磨中降临，使他的子民摆脱屈服"]];
 // [
 //   ['centrale', 'are', 'about', '200', 'species', 'of', 'squirrels', 'in', 'the', 'world.', 'There', 'are', 'about', '10', 'tree', 'species', 'in', 'North', 'America.'],
 //   ['A', 'squirrel', 'has', '2', 'to', '4', 'babies', 'at', 'a', 'time', 'and', 'can', 'raise', 'two', 'litters', 'of', 'kits', 'per', 'year.']
