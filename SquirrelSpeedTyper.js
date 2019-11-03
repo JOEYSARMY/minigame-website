@@ -27,7 +27,7 @@ const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 const currentPhrase = document.querySelector('#current-phrase');
 
-const words =[["squirrel"]];
+const words =[["squirrel", "Acorns", "Tree", "Ratatoskr", "Aorta", "Trachea", "Tibial Artery", "Vena Cava", "Caudal Vein"]];
 // [
 //   ['centrale', 'are', 'about', '200', 'species', 'of', 'squirrels', 'in', 'the', 'world.', 'There', 'are', 'about', '10', 'tree', 'species', 'in', 'North', 'America.'],
 //   ['A', 'squirrel', 'has', '2', 'to', '4', 'babies', 'at', 'a', 'time', 'and', 'can', 'raise', 'two', 'litters', 'of', 'kits', 'per', 'year.']
@@ -87,7 +87,7 @@ function showWord(words) {
   //output phrase
   currentPhrase.innerHTML = words[randWordsIndex].join(' ');
   // Output random word
-  currentWord.innerHTML = words[randWordsIndex][phraseIndex];
+  currentWord.innerHTML = words[randWordsIndex][phraseIndex++];
 }
 
 // Countdown timer
